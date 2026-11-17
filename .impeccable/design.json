@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-17T00:00:00Z",
+  "title": "Design System: Smart Surveillance System",
+  "extensions": {
+    "colorMeta": {
+      "surface-base":   { "role": "neutral",  "displayName": "Surface Base",   "canonical": "oklch(13% 0.004 264)", "tonalRamp": ["oklch(5% 0.004 264)", "oklch(10% 0.004 264)", "oklch(13% 0.004 264)", "oklch(21% 0.006 264)", "oklch(27% 0.006 264)", "oklch(45% 0.010 264)", "oklch(70% 0.011 264)", "oklch(90% 0.004 264)"] },
+      "surface-panel":  { "role": "neutral",  "displayName": "Surface Panel",  "canonical": "oklch(21% 0.006 264)", "tonalRamp": ["oklch(5% 0.004 264)", "oklch(13% 0.004 264)", "oklch(21% 0.006 264)", "oklch(27% 0.006 264)", "oklch(37% 0.009 264)", "oklch(55% 0.014 264)", "oklch(70% 0.011 264)", "oklch(90% 0.004 264)"] },
+      "surface-hover":  { "role": "neutral",  "displayName": "Surface Hover",  "canonical": "oklch(27% 0.006 264)", "tonalRamp": ["oklch(8% 0.004 264)", "oklch(13% 0.004 264)", "oklch(21% 0.006 264)", "oklch(27% 0.006 264)", "oklch(37% 0.009 264)", "oklch(55% 0.014 264)", "oklch(70% 0.011 264)", "oklch(90% 0.004 264)"] },
+      "border":         { "role": "neutral",  "displayName": "Border",         "canonical": "oklch(27% 0.006 264)", "tonalRamp": ["oklch(8% 0.004 264)", "oklch(13% 0.004 264)", "oklch(21% 0.006 264)", "oklch(27% 0.006 264)", "oklch(37% 0.009 264)", "oklch(55% 0.014 264)", "oklch(70% 0.011 264)", "oklch(90% 0.004 264)"] },
+      "text-primary":   { "role": "neutral",  "displayName": "Text Primary",   "canonical": "oklch(100% 0 0)",     "tonalRamp": ["oklch(13% 0 0)", "oklch(27% 0 0)", "oklch(45% 0 0)", "oklch(60% 0 0)", "oklch(70% 0 0)", "oklch(80% 0 0)", "oklch(92% 0 0)", "oklch(100% 0 0)"] },
+      "text-secondary": { "role": "neutral",  "displayName": "Text Secondary", "canonical": "oklch(70.4% 0.011 264)", "tonalRamp": ["oklch(13% 0.004 264)", "oklch(27% 0.006 264)", "oklch(45% 0.010 264)", "oklch(55% 0.014 264)", "oklch(64% 0.012 264)", "oklch(70% 0.011 264)", "oklch(80% 0.008 264)", "oklch(92% 0.004 264)"] },
+      "text-muted":     { "role": "neutral",  "displayName": "Text Muted",     "canonical": "oklch(55% 0.014 264)", "tonalRamp": ["oklch(13% 0.004 264)", "oklch(21% 0.006 264)", "oklch(37% 0.009 264)", "oklch(45% 0.010 264)", "oklch(55% 0.014 264)", "oklch(70% 0.011 264)", "oklch(80% 0.008 264)", "oklch(92% 0.004 264)"] },
+      "alert":          { "role": "primary",  "displayName": "Alert Red",      "canonical": "oklch(70.1% 0.199 29.2)", "tonalRamp": ["oklch(25% 0.180 29)", "oklch(35% 0.210 27)", "oklch(45% 0.230 26)", "oklch(57% 0.245 27)", "oklch(63% 0.237 25)", "oklch(70% 0.199 29)", "oklch(80% 0.150 30)", "oklch(92% 0.070 30)"] },
+      "alert-strong":   { "role": "primary",  "displayName": "Alert Strong",   "canonical": "oklch(63.7% 0.237 25.3)", "tonalRamp": ["oklch(20% 0.180 25)", "oklch(32% 0.210 26)", "oklch(45% 0.230 26)", "oklch(57% 0.245 27)", "oklch(63% 0.237 25)", "oklch(70% 0.199 29)", "oklch(80% 0.150 30)", "oklch(92% 0.070 30)"] },
+      "alert-banner":   { "role": "primary",  "displayName": "Alert Banner",   "canonical": "oklch(57.7% 0.245 27.9)", "tonalRamp": ["oklch(18% 0.170 27)", "oklch(28% 0.200 27)", "oklch(40% 0.225 27)", "oklch(50% 0.240 27)", "oklch(57% 0.245 27)", "oklch(63% 0.237 25)", "oklch(75% 0.170 29)", "oklch(90% 0.080 30)"] },
+      "status-live":    { "role": "tertiary", "displayName": "Status Live",    "canonical": "oklch(79.2% 0.209 151.7)", "tonalRamp": ["oklch(25% 0.180 151)", "oklch(35% 0.200 151)", "oklch(45% 0.209 151)", "oklch(58% 0.209 151)", "oklch(68% 0.209 151)", "oklch(79% 0.209 151)", "oklch(88% 0.150 151)", "oklch(95% 0.060 151)"] }
+    },
+    "typographyMeta": {
+      "display":  { "displayName": "Display",  "purpose": "Stat count numbers. Must be legible from 1–2 metres." },
+      "headline": { "displayName": "Headline", "purpose": "Page title only. Wide tracking registers authority." },
+      "title":    { "displayName": "Title",    "purpose": "Stat value text: last-detected time, system status word." },
+      "body":     { "displayName": "Body",     "purpose": "Labels, timestamps, metadata — the working read layer." },
+      "label":    { "displayName": "Label",    "purpose": "Detection class names. Always uppercase, 0.05em tracked." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "transition-colors", "value": "background-color 150ms ease", "purpose": "Row hover state transition." },
+      { "name": "alert-pulse", "value": "opacity 1s cubic-bezier(0.4,0,0.6,1) infinite", "purpose": "Alert banner pulse: 1 → 0.6 opacity." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px", "purpose": "Stats grid switches from 1-column to 3-column." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Alert Banner",
+      "kind": "custom",
+      "refersTo": "alert-banner",
+      "description": "Fixed full-bleed strip on weapon detection. Auto-dismisses after 3 seconds.",
+      "html": "<div class=\"ds-alert-banner\">⚠ WEAPON DETECTED — ALERT TRIGGERED</div>",
+      "css": ".ds-alert-banner { position: fixed; top: 0; left: 0; width: 100%; background: #dc2626; color: #ffffff; text-align: center; padding: 0.75rem 1.5rem; font-size: 1.125rem; font-weight: 700; font-family: system-ui, sans-serif; z-index: 50; animation: ds-pulse 1s cubic-bezier(0.4,0,0.6,1) infinite; } @keyframes ds-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }"
+    },
+    {
+      "name": "Stat Card",
+      "kind": "card",
+      "refersTo": "stat-card",
+      "description": "One of three stats in the grid. Shows a label and a primary value.",
+      "html": "<div class=\"ds-stat-card\"><p class=\"ds-stat-card__label\">Total Detections</p><p class=\"ds-stat-card__value ds-stat-card__value--alert\">42</p></div>",
+      "css": ".ds-stat-card { background: #18181b; border: 1px solid #27272a; border-radius: 0.75rem; padding: 1.25rem; color: #ffffff; } .ds-stat-card__label { color: #a1a1aa; font-size: 0.875rem; font-family: system-ui, sans-serif; margin: 0; } .ds-stat-card__value { font-size: 2.25rem; font-weight: 700; margin: 0.25rem 0 0; color: #ffffff; font-family: system-ui, sans-serif; line-height: 1.1; } .ds-stat-card__value--alert { color: #f87171; } .ds-stat-card__value--status-live { color: #4ade80; } .ds-stat-card__value--status-offline { color: #f87171; }"
+    },
+    {
+      "name": "Detection Row",
+      "kind": "custom",
+      "refersTo": "detection-row",
+      "description": "A single weapon detection event in the log. Class label left, confidence and timestamp right.",
+      "html": "<li class=\"ds-detection-row\"><div class=\"ds-detection-row__label\"><span class=\"ds-detection-row__dot\"></span><span class=\"ds-detection-row__class\">KNIFE</span></div><div class=\"ds-detection-row__meta\"><span>Confidence: <strong>87.3%</strong></span><span>14:22:05</span></div></li>",
+      "css": ".ds-detection-row { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid #27272a; transition: background 0.15s; list-style: none; } .ds-detection-row:hover { background: #27272a; } .ds-detection-row__label { display: flex; align-items: center; gap: 0.75rem; } .ds-detection-row__dot { display: block; width: 0.5rem; height: 0.5rem; border-radius: 9999px; background: #ef4444; flex-shrink: 0; } .ds-detection-row__class { color: #f87171; font-weight: 500; text-transform: uppercase; font-size: 0.875rem; font-family: system-ui, sans-serif; letter-spacing: 0.05em; } .ds-detection-row__meta { display: flex; align-items: center; gap: 1rem; font-size: 0.875rem; color: #a1a1aa; font-family: system-ui, sans-serif; flex-wrap: wrap; justify-content: flex-end; } .ds-detection-row__meta strong { color: #ffffff; font-weight: 400; }"
+    },
+    {
+      "name": "Status Indicator",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "12px dot + text label in the page header. Two states: live and offline.",
+      "html": "<div class=\"ds-status ds-status--live\"><span class=\"ds-status__dot\"></span><span class=\"ds-status__label\">Live</span></div>",
+      "css": ".ds-status { display: flex; align-items: center; gap: 0.5rem; } .ds-status__dot { display: block; width: 0.75rem; height: 0.75rem; border-radius: 9999px; flex-shrink: 0; background: #71717a; } .ds-status--live .ds-status__dot { background: #4ade80; } .ds-status--offline .ds-status__dot { background: #ef4444; } .ds-status__label { font-size: 0.875rem; color: #a1a1aa; font-family: system-ui, sans-serif; }"
+    },
+    {
+      "name": "Detection Log Container",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Full-width panel wrapping the detection list. Has a header row and scrollable body.",
+      "html": "<div class=\"ds-log\"><div class=\"ds-log__header\"><span class=\"ds-log__title\">Detection Log</span><button class=\"ds-log__clear\">Clear</button></div><ul class=\"ds-log__body\"><!-- ds-detection-row items --></ul></div>",
+      "css": ".ds-log { background: #18181b; border: 1px solid #27272a; border-radius: 0.75rem; overflow: hidden; } .ds-log__header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid #27272a; } .ds-log__title { font-weight: 600; color: #ffffff; font-family: system-ui, sans-serif; font-size: 1rem; } .ds-log__clear { font-size: 0.75rem; color: #71717a; background: none; border: none; cursor: pointer; font-family: system-ui, sans-serif; padding: 0; } .ds-log__clear:hover { color: #d4d4d8; } .ds-log__body { margin: 0; padding: 0; max-height: 400px; overflow-y: auto; list-style: none; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Ops Terminal",
+    "overview": "This interface is built for the operator who cannot look away. Dark, near-black surfaces reduce visual fatigue across extended monitoring sessions. High-contrast white primary text and sharp red alert signals cut through without competing for attention. The system speaks only when it must — the absence of decoration is the design; every element that remains is load-bearing.\n\nThe palette is strictly functional: neutral grays hold structure, red owns threat signals, and green holds exactly one meaning: the system is live. No color appears for decoration. The layout is generous enough to scan at a glance from across a room, but dense enough to fit meaningful data without scrolling under normal conditions.\n\nGeist Sans carries the typographic system — geometric, legible at small sizes, with zero personality flourish.",
+    "keyCharacteristics": [
+      "Near-black tonal layering with no shadows",
+      "Red as the exclusive signal color for threats and alerts",
+      "Green reserved for a single state: system live",
+      "Uppercase tracking on detection class labels",
+      "Rounded-xl containers; full-pill only for status indicators"
+    ],
+    "rules": [
+      { "name": "The Red Monopoly Rule", "body": "Red means weapon. It appears on detection labels, detection dots, the alert banner, and the disconnected state. No other element borrows it. If you're tempted to use red for a non-threat purpose, use gray instead.", "section": "colors" },
+      { "name": "The Two-Signal Rule", "body": "Only two colors carry live semantic meaning: red (threat / disconnected) and green (live). Every other element is neutral. Adding a third signal color breaks the read.", "section": "colors" },
+      { "name": "The Label Register Rule", "body": "Detection class names are always uppercase, medium weight, 0.05em tracked. They must read like a classification, not a word.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "No shadows. If you need to indicate a new layer, raise the background one step toward white. If you need to indicate action, raise it on hover. Shadows introduce visual noise that competes with alert signals.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use rounded-xl (0.75rem) for all panel and card surfaces.",
+      "Do keep all detection-related text in alert (#f87171) or stronger — never muted or secondary gray.",
+      "Do use uppercase with tracking-[0.05em] for detection class labels.",
+      "Do pair every audio alert with a visual one (and vice versa) so the operator is not dependent on a single channel.",
+      "Do reserve green (status-live) exclusively for the system-live connection state."
+    ],
+    "donts": [
+      "Don't add box-shadows. Depth is tonal only.",
+      "Don't use red for anything other than weapon detections, disconnect state, and the alert banner.",
+      "Don't introduce a third semantic signal color. The two-signal system (red / green) must stay unambiguous.",
+      "Don't wrap static metadata (timestamps, confidence scores) in pill containers — they are plain text with appropriate color weight.",
+      "Don't use backdrop-filter or blur effects. The system has no glassmorphic surfaces."
+    ]
+  }
+}

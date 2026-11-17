@@ -53,7 +53,6 @@ export default function Home() {
           >
             ⚠ WEAPON DETECTED — ALERT TRIGGERED
           </div>
-          {/* Spacer so the banner doesn't cover the header */}
           <div aria-hidden="true" className="h-12" />
         </>
       )}
